@@ -49,11 +49,15 @@ export default function Header()
     return(
         <div className="sticky top-0 z-20">
 
-          <div className=" flex flex-row items-center min-w-screen justify-between border-b h-20 bg-white text-black overflow-hidden" >
+          <div className=" flex flex-row items-center min-w-screen justify-center border-b h-20 bg-white text-black overflow-hidden" >
               
-              <button onClick={()=>setOpenMenu(!openMenu)}><Image src={'/icons/menuu.gif'} alt="menu" width={40} height={40} className="ml-10 invert"></Image></button>
-              <Link href={'/'}><Image src={'/Logo.gif'} alt="menu" width={250} height={100} className="invert"/></Link>
-              <button onClick={()=>setOpenCart(!openCart)}><Image src={'/icons/cart.gif'} alt="menu" width={40} height={40} className="mr-10 invert"></Image></button>
+              <button onClick={()=>setOpenMenu(!openMenu)} className="w-1/8"><Image src={'/icons/menuu.gif'} alt="menu" width={40} height={40} className="ml-10 invert"></Image></button>
+              <Link href={'/'} className="w-3/4 flex justify-center"><Image src={'/Logo.gif'} alt="menu" width={250} height={100} className="invert"/></Link>
+              <div className="flex flex-row justify-between items-center w-1/8">
+                <button><Image src={'/icons/profile.png'} width={40} height={40} alt="prof"/></button>
+                <button onClick={()=>setOpenCart(!openCart)}><Image src={'/icons/cart.gif'} alt="menu" width={40} height={40} className="mr-10 invert"></Image></button>
+              
+              </div>
               
           </div>
           <Menu openMenu={openMenu} setOpenMenu={setOpenMenu} />
