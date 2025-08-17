@@ -9,7 +9,6 @@ export default function Banner()
 {
     return(
         <div className="h-90 flex flex-col justify-center items-center overflow-hidden">
-            
             <div className="flex flex-col justify-center items-center h-60">
                 <Image src={'/hero.gif'} alt="quote" width={600} height={300}></Image>
             </div>   

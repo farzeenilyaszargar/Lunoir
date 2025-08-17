@@ -54,7 +54,7 @@ export default function Header()
               <button onClick={()=>setOpenMenu(!openMenu)} className="w-1/8"><Image src={'/icons/menuu.gif'} alt="menu" width={40} height={40} className="ml-10 invert"></Image></button>
               <Link href={'/'} className="w-3/4 flex justify-center"><Image src={'/Logo.gif'} alt="menu" width={250} height={100} className="invert"/></Link>
               <div className="flex flex-row justify-between items-center w-1/8">
-                <button><Image src={'/icons/profile.png'} width={40} height={40} alt="prof"/></button>
+                <Link href={'/sign-in/'}><Image src={'/icons/profile.png'} width={35} height={35} alt="prof"/></Link>
                 <button onClick={()=>setOpenCart(!openCart)}><Image src={'/icons/cart.gif'} alt="menu" width={40} height={40} className="mr-10 invert"></Image></button>
               
               </div>
