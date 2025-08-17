@@ -3,7 +3,7 @@ import { auth } from "@/auth";
 import Image from "next/image";
 import Link from "next/link";
 
-export default async function Header() {
+export default async function ProfileBtn() {
   const session = await auth(); // null if not signed in
   const user = session?.user;
 

@@ -6,7 +6,7 @@ import Image from "next/image";
 import EmailComp from "./emailComponent";
 
 
-export default function sign()
+export default function SignIn()
 {
     return(
         <div>

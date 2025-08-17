@@ -1,12 +1,9 @@
 'use client';
 
 import { useState } from "react";
-import Image from "next/image";
 
 
-
-
-export default function emailComp()
+export default function EmailComp()
 {
     const [ visible, setVisible ] = useState(true);
     return(

@@ -1,7 +1,6 @@
 import { auth } from "@/auth";
 import Image from "next/image";
 import Header from "@/components/header";
-import { signOut } from "next-auth/react";
 import { LogoutButton } from "./logoutBtn";
 
 export default async function Profile() {
