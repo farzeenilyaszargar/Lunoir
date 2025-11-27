@@ -1,10 +1,10 @@
 import Banner from "@/components/HeroSection";
-import FAQ from "@/components/Faq";
+import FAQ from "@/components/FaqSection";
 import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+import Header from "@/components/MainHeader";
 import Reviews from "@/components/Reviews";
-import Shop from "@/components/Shop";
-import Load from '@/components/CompLoading';
+import Shop from "@/components/MainShop";
+import Load from '@/components/StartLoad';
 
 
 export default function Home() {

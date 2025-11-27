@@ -1,4 +1,4 @@
-import Header from "@/components/Header";
+import Header from "@/components/MainHeader";
 import { products } from "@/lib/products";
 import Image from "next/image";
 

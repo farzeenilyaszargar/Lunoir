@@ -2,8 +2,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import Menu from "./Menu";
-import Cart from "./Cart";
-import ProfileBtn from './profileBtn';
+import Cart from "./CartSystem";
+import ProfileBtn from './ProfileBtns';
 import USPStrip from "./USP";
 
 

@@ -1,6 +1,6 @@
 import { auth } from "@/auth";
 import Image from "next/image";
-import Header from "@/components/Header";
+import Header from "@/components/MainHeader";
 import { LogoutButton } from "./logoutBtn";
 
 export default async function Profile() {
