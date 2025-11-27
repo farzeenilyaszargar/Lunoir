@@ -1,6 +1,9 @@
+
 import Header from "@/components/MainHeader";
 import { products } from "@/lib/products";
+import next from "next";
 import Image from "next/image";
+
 
 export default function ShopPage({ params }: { params: { id: string } }) {
     const prodId = Number(params.id)
