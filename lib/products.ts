@@ -1,13 +1,13 @@
-interface Prods {
+export interface Prods {
     id: number;
     name: string;
     price: number;
-    color: string;
-    tcolor: string;
+    color?: string;
+    tcolor?: string;
     badge: string;
     image: string;
-    rating: number;
-    totalReviews: number;
+    rating?: number;
+    totalReviews?: number;
     sizes: string[];
 }
 

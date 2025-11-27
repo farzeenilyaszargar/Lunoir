@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { products } from "@/lib/products";
+import { Prods, products } from "@/lib/products";
 
 function Stars({ rating = 5 }: { rating?: number }) {
   const full = Math.max(0, Math.min(5, Math.round(rating)));
@@ -29,7 +29,7 @@ export default function ProductGrid() {
       setSelectedSizes((prev) => ({ ...prev, [id]: size }));
     };
   
-    const handleAddToCart = (product: any) => {
+    const handleAddToCart = (product: Prods) => {
       const size = selectedSizes[product.id] || product.sizes[0]; // default first size
       const cartItem = { ...product, size };
   
