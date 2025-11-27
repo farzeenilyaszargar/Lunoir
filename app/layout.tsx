@@ -1,18 +1,12 @@
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
 import "./globals.css";
 import Head from 'next/head';
 import ogImage from "@/public/ogImg-Card.png";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-
 export const metadata: Metadata = {
   title: "Lunoir | Embrace Crazy Clothing",
   description: "here we create crazy but good quality shirts for you to wear. quality is king. free delivery. free return policy for 30 days. highest and most affordable shirts in India. simply the best of the best. ha hah ha ",
+  
   openGraph: {
   images: [
     {
@@ -25,11 +19,7 @@ export const metadata: Metadata = {
 }
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({children,}: Readonly<{children: React.ReactNode;}>) {
   return (
     <html lang="en">
       <Head>
