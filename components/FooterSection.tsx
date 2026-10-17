@@ -12,7 +12,6 @@ export default function Footer() {
             <Link href="/" aria-label="Lunoir home" className="flex h-16 w-52 items-center overflow-hidden focus-visible:outline-white">
               <Image src="/Logo.gif" alt="Lunoir" width={1080} height={1080} className="h-52 w-52 shrink-0 object-contain" unoptimized />
             </Link>
-            <p className="mt-5 max-w-xs text-xl font-medium leading-relaxed tracking-tight sm:text-2xl">A little louder.<br />A little more you.</p>
             <p className="mt-3 text-sm text-zinc-500">Designed for your comfort. Worn your way.</p>
           </div>
 
