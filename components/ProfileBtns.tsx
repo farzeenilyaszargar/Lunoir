@@ -23,7 +23,7 @@ export default async function ProfileBtn() {
         <Link href={'/sign-in'}>
           <Image
             src={"/icons/profile.png"}
-            alt={"nonce"}
+            alt={"Sign in"}
             className="h-8 w-8 rounded-full mb-1"
             width={25}
             height={25}

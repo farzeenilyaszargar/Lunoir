@@ -21,7 +21,7 @@ export default function Header() {
           <Menu />
         </div>
 
-        <Link href={'/'} className="w-screen flex justify-center z-0"><Image src={'/Logo.gif'} alt="menu" width={200} height={100} className="invert md:w-70 sm:w-45 w-40" unoptimized /></Link>
+        <Link href={'/'} className="w-screen flex justify-center z-0"><Image src={'/Logo.gif'} alt="Lunoir home" width={200} height={100} className="invert md:w-70 sm:w-45 w-40" unoptimized /></Link>
         <div className="flex flex-row justify-around items-center  absolute right-0 ">
           <ProfileBtn />
           <Cart />

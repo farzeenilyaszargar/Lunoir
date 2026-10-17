@@ -14,7 +14,7 @@ export default function Banner() {
                                     
                                     ">
                     <Image src={'/icons/down-icon.png'} alt="down-arrow" width={20} height={20} className="filter invert md:w-5 md:h-5 w-4 h-4" />
-                    <p className="text-sm md:text-base">Check Out</p>
+                    <p className="text-sm md:text-base">Shop shirts</p>
                 </Link>
                 <Link href={'#review-section'} className="bg-white border  rounded-4xl font-medium p-2 pl-4 pr-4 text-black flex flex-row items-center justify-around
                                     hover:filter hover:invert transition duration-300 ease-in-out 

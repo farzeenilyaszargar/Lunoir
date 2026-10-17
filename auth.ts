@@ -13,7 +13,7 @@ export const { handlers:{ GET, POST }, auth, signIn, signOut } = NextAuth({
       },
     }),],
     callbacks: {
-        async redirect({ url, baseUrl}) {
+        async redirect({ baseUrl}) {
             return (baseUrl+'/');
         }
     }

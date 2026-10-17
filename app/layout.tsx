@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Head from 'next/head';
+import { CartProvider } from "@/components/CartProvider";
 import ogImage from "@/public/ogImg-Card.png";
 
 export const metadata: Metadata = {
+  icons: { icon: "/favicon.png" },
   title: "Lunoir | Embrace Crazy Clothing",
   description: "here we create crazy but good quality shirts for you to wear. quality is king. free delivery. free return policy for 30 days. highest and most affordable shirts in India. simply the best of the best. ha hah ha ",
   
@@ -22,11 +23,8 @@ export const metadata: Metadata = {
 export default function RootLayout({children,}: Readonly<{children: React.ReactNode;}>) {
   return (
     <html lang="en">
-      <Head>
-        <link rel="icon" href="/favicon.png" />
-      </Head>
       <body>
-        {children}
+        <CartProvider>{children}</CartProvider>
       </body>
     </html>
   );

@@ -2,7 +2,7 @@
 import { signIn } from "@/auth"
 import Header from "@/components/MainHeader";
 import Image from "next/image";
-import EmailComp from "./emailComponent";
+
 
 
 export default function SignIn()
@@ -12,7 +12,7 @@ export default function SignIn()
             <Header/>
             <div className="h-140 w-screen flex justify-center items-center flex-col">
                 <div className="flex items-center justify-center p-10 pb-15 rounded-2xl flex-col md:w-1/3 border">
-                    <h1 className="text-2xl mb-5 font-bold">Sign Up</h1>
+                    <h1 className="text-2xl mb-5 font-bold">Sign in</h1>
 
                     <form className="w-full"
                         action={async () => {
@@ -27,8 +27,6 @@ export default function SignIn()
                             Continue with Google
                         </button>
                     </form>
-                    <p className="mb-5 mt-5 w-full text-center border-b leading-1"><span className="bg-white pl-3 pr-3 ">or</span></p>
-                    <EmailComp />
                 </div>
                 
             </div>

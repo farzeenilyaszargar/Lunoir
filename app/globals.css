@@ -1,69 +1,16 @@
 @import "tailwindcss";
 
-@keyframes marquee 
-{
-    0% {
-        transform: translateX(0%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-    
-}
-
-.marquee-anim
-{
-    animation: marquee 15s linear infinite;
-}
-
-
-
-@keyframes reviews-n
-{
-    0%
-    {
-        transform: translateX(0%) translateY(0%);
-    }
-    50%
-    {
-        transform: translateX(10%) translateY(20%);
-    }
-    100%
-    {
-        transform: translateX(20%) translateY(0%);
-    }
-   
-}
-
-@keyframes reviews-p
-{
-    0%
-    {
-        transform: translateX(0%) translateY(0%);
-    }
-    50%
-    {
-        transform: translateX(10%) translateY(-20%);
-    }
-    100%
-    {
-        transform: translateX(20%) translateY(0%);
-    }
-   
-}
-
-.reviews-anim-p
-{
-    animation: reviews-p 1s linear ;
-    transform: translateX(20%) translateY(0%);
-}
-
-.reviews-anim-n
-{
-    animation: reviews-n 1s linear ;
-    transform: translateX(20%) translateY(0%);
-}
-
 html {
   scroll-behavior: smooth;
+}
+@keyframes cart-enter {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+.cart-dialog[open] { animation: cart-enter 300ms ease-out; }
+button:not(:disabled), summary { cursor: pointer; }
+:focus-visible { outline: 2px solid #18181b; outline-offset: 4px; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .cart-dialog[open] { animation: none; }
 }

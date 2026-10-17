@@ -20,9 +20,8 @@ export default async function Profile() {
                             <p>{user.email}</p>
                         </>
                     ) : (
-                        <a href="/login">Sign in</a>
+                        <a href="/sign-in">Sign in</a>
                     )}
-                    <p>Order History Stuff Maybe</p>
                     <LogoutButton/>
                 </div>
 
