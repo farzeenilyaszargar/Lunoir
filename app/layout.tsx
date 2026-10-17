@@ -4,7 +4,10 @@ import { CartProvider } from "@/components/CartProvider";
 import ogImage from "@/public/ogImg-Card.png";
 
 export const metadata: Metadata = {
-  icons: { icon: "/favicon.png" },
+  icons: {
+    icon: { url: "/favicon.ico?v=2", type: "image/x-icon", sizes: "96x96" },
+    shortcut: "/favicon.ico?v=2",
+  },
   title: "Lunoir | Embrace Crazy Clothing",
   description: "here we create crazy but good quality shirts for you to wear. quality is king. free delivery. free return policy for 30 days. highest and most affordable shirts in India. simply the best of the best. ha hah ha ",
   
